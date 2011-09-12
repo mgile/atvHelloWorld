@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29028C7C141DA49C002053B3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29028C7B141DA49C002053B3 /* Info.plist */; };
+		29028C85141DB7E5002053B3 /* schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 29028C84141DB7E5002053B3 /* schedule.png */; };
+		29028C87141DB979002053B3 /* 360iDevBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 29028C86141DB979002053B3 /* 360iDevBanner.png */; };
+		29028C89141DBA59002053B3 /* CrownePlaza.png in Resources */ = {isa = PBXBuildFile; fileRef = 29028C88141DBA59002053B3 /* CrownePlaza.png */; };
+		29536CB8141D7ADA0044B730 /* ATVAppliance.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29536CB0141D7ADA0044B730 /* ATVAppliance.mm */; };
+		29536CB9141D7ADA0044B730 /* BRTopShelfView-ProductImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CB3141D7ADA0044B730 /* BRTopShelfView-ProductImage.m */; };
+		29536CBA141D7ADA0044B730 /* HelloWorldMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CB5141D7ADA0044B730 /* HelloWorldMainMenu.m */; };
+		29536CBB141D7ADA0044B730 /* TopShelfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CB7141D7ADA0044B730 /* TopShelfController.m */; };
+		29536CBE141D7B450044B730 /* GLGravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CBD141D7B450044B730 /* GLGravityView.m */; };
+		29536CC0141D7CF20044B730 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29536CBF141D7CF20044B730 /* CoreGraphics.framework */; };
+		29536CC2141D7CFC0044B730 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29536CC1141D7CFC0044B730 /* Foundation.framework */; };
+		29536CC5141D7D0E0044B730 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29536CC3141D7D0E0044B730 /* OpenGLES.framework */; };
+		29536CC6141D7D0E0044B730 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29536CC4141D7D0E0044B730 /* QuartzCore.framework */; };
+		29536CCB141D7D610044B730 /* 360iDev.png in Resources */ = {isa = PBXBuildFile; fileRef = 29536CC8141D7D610044B730 /* 360iDev.png */; };
+		29536CCC141D7D610044B730 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29536CC9141D7D610044B730 /* InfoPlist.strings */; };
+		29536CCE141D7DE40044B730 /* Teapot.png in Resources */ = {isa = PBXBuildFile; fileRef = 29536CCD141D7DE40044B730 /* Teapot.png */; };
+		29536CD6141D82B60044B730 /* GLGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CD5141D82B60044B730 /* GLGravityViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29028C7B141DA49C002053B3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29028C84141DB7E5002053B3 /* schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schedule.png; sourceTree = "<group>"; };
+		29028C86141DB979002053B3 /* 360iDevBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 360iDevBanner.png; sourceTree = "<group>"; };
+		29028C88141DBA59002053B3 /* CrownePlaza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CrownePlaza.png; sourceTree = "<group>"; };
+		29536CA1141D79860044B730 /* helloWorld.frappliance */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloWorld.frappliance; sourceTree = BUILT_PRODUCTS_DIR; };
+		29536CA9141D79860044B730 /* helloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helloWorld-Prefix.pch"; sourceTree = "<group>"; };
+		29536CAE141D7ADA0044B730 /* ApplianceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplianceConfig.h; sourceTree = "<group>"; };
+		29536CAF141D7ADA0044B730 /* ATVAppliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATVAppliance.h; sourceTree = "<group>"; };
+		29536CB0141D7ADA0044B730 /* ATVAppliance.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ATVAppliance.mm; sourceTree = "<group>"; };
+		29536CB1141D7ADA0044B730 /* BackRowExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackRowExtras.h; sourceTree = "<group>"; };
+		29536CB2141D7ADA0044B730 /* BRTopShelfView-ProductImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BRTopShelfView-ProductImage.h"; sourceTree = "<group>"; };
+		29536CB3141D7ADA0044B730 /* BRTopShelfView-ProductImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BRTopShelfView-ProductImage.m"; sourceTree = "<group>"; };
+		29536CB4141D7ADA0044B730 /* HelloWorldMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldMainMenu.h; sourceTree = "<group>"; };
+		29536CB5141D7ADA0044B730 /* HelloWorldMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldMainMenu.m; sourceTree = "<group>"; };
+		29536CB6141D7ADA0044B730 /* TopShelfController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopShelfController.h; sourceTree = "<group>"; };
+		29536CB7141D7ADA0044B730 /* TopShelfController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopShelfController.m; sourceTree = "<group>"; };
+		29536CBC141D7B450044B730 /* GLGravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGravityView.h; sourceTree = "<group>"; };
+		29536CBD141D7B450044B730 /* GLGravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGravityView.m; sourceTree = "<group>"; };
+		29536CBF141D7CF20044B730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		29536CC1141D7CFC0044B730 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		29536CC3141D7D0E0044B730 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		29536CC4141D7D0E0044B730 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		29536CC8141D7D610044B730 /* 360iDev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 360iDev.png; sourceTree = "<group>"; };
+		29536CCA141D7D610044B730 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		29536CCD141D7DE40044B730 /* Teapot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Teapot.png; sourceTree = "<group>"; };
+		29536CD4141D82B60044B730 /* GLGravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGravityViewController.h; sourceTree = "<group>"; };
+		29536CD5141D82B60044B730 /* GLGravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGravityViewController.m; sourceTree = "<group>"; };
+		29536CD7141D85150044B730 /* teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29536C9E141D79860044B730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29536CC5141D7D0E0044B730 /* OpenGLES.framework in Frameworks */,
+				29536CC6141D7D0E0044B730 /* QuartzCore.framework in Frameworks */,
+				29536CC2141D7CFC0044B730 /* Foundation.framework in Frameworks */,
+				29536CC0141D7CF20044B730 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29536CA3141D79860044B730 /* helloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				29536CAD141D7ADA0044B730 /* Classes */,
+				29536CA4141D79860044B730 /* Supporting Files */,
+			);
+			path = helloWorld;
+			sourceTree = "<group>";
+		};
+		29536CA4141D79860044B730 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29536CC7141D7D610044B730 /* Resources */,
+				29536CA9141D79860044B730 /* helloWorld-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29536CAD141D7ADA0044B730 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				29536CD3141D82950044B730 /* Video */,
+				29536CD2141D828E0044B730 /* Molecules */,
+				29536CD1141D82860044B730 /* OpenGL Teapot */,
+				29536CD0141D827E0044B730 /* 360iDev */,
+				29536CCF141D82710044B730 /* Hello World */,
+				29536CAE141D7ADA0044B730 /* ApplianceConfig.h */,
+				29536CAF141D7ADA0044B730 /* ATVAppliance.h */,
+				29536CB0141D7ADA0044B730 /* ATVAppliance.mm */,
+				29536CB1141D7ADA0044B730 /* BackRowExtras.h */,
+				29536CB2141D7ADA0044B730 /* BRTopShelfView-ProductImage.h */,
+				29536CB3141D7ADA0044B730 /* BRTopShelfView-ProductImage.m */,
+				29536CB6141D7ADA0044B730 /* TopShelfController.h */,
+				29536CB7141D7ADA0044B730 /* TopShelfController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		29536CC7141D7D610044B730 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29028C7B141DA49C002053B3 /* Info.plist */,
+				29536CCD141D7DE40044B730 /* Teapot.png */,
+				29028C88141DBA59002053B3 /* CrownePlaza.png */,
+				29536CC8141D7D610044B730 /* 360iDev.png */,
+				29028C86141DB979002053B3 /* 360iDevBanner.png */,
+				29028C84141DB7E5002053B3 /* schedule.png */,
+				29536CC9141D7D610044B730 /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29536CCF141D82710044B730 /* Hello World */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Hello World";
+			sourceTree = "<group>";
+		};
+		29536CD0141D827E0044B730 /* 360iDev */ = {
+			isa = PBXGroup;
+			children = (
+				29536CB4141D7ADA0044B730 /* HelloWorldMainMenu.h */,
+				29536CB5141D7ADA0044B730 /* HelloWorldMainMenu.m */,
+			);
+			name = 360iDev;
+			sourceTree = "<group>";
+		};
+		29536CD1141D82860044B730 /* OpenGL Teapot */ = {
+			isa = PBXGroup;
+			children = (
+				29536CD4141D82B60044B730 /* GLGravityViewController.h */,
+				29536CD5141D82B60044B730 /* GLGravityViewController.m */,
+				29536CBC141D7B450044B730 /* GLGravityView.h */,
+				29536CBD141D7B450044B730 /* GLGravityView.m */,
+				29536CD7141D85150044B730 /* teapot.h */,
+			);
+			name = "OpenGL Teapot";
+			sourceTree = "<group>";
+		};
+		29536CD2141D828E0044B730 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Molecules;
+			sourceTree = "<group>";
+		};
+		29536CD3141D82950044B730 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		29F21F7E141D7185008E187C = {
+			isa = PBXGroup;
+			children = (
+				29536CA3141D79860044B730 /* helloWorld */,
+				29F21F8E141D71B8008E187C /* Frameworks */,
+				29F21F8C141D71B8008E187C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29F21F8C141D71B8008E187C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29536CA1141D79860044B730 /* helloWorld.frappliance */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29F21F8E141D71B8008E187C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29536CC3141D7D0E0044B730 /* OpenGLES.framework */,
+				29536CC4141D7D0E0044B730 /* QuartzCore.framework */,
+				29536CC1141D7CFC0044B730 /* Foundation.framework */,
+				29536CBF141D7CF20044B730 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29536CA0141D79860044B730 /* helloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29536CAA141D79860044B730 /* Build configuration list for PBXNativeTarget "helloWorld" */;
+			buildPhases = (
+				29536C9D141D79860044B730 /* Sources */,
+				29536C9E141D79860044B730 /* Frameworks */,
+				29536C9F141D79860044B730 /* Resources */,
+				29536CDC141D87840044B730 /* Install AppleTV Appliance */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = helloWorld;
+			productName = helloWorld;
+			productReference = 29536CA1141D79860044B730 /* helloWorld.frappliance */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29F21F80141D7185008E187C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Wayin Inc.";
+			};
+			buildConfigurationList = 29F21F83141D7185008E187C /* Build configuration list for PBXProject "atvHelloWorld" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29F21F7E141D7185008E187C;
+			productRefGroup = 29F21F8C141D71B8008E187C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29536CA0141D79860044B730 /* helloWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29536C9F141D79860044B730 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29536CCB141D7D610044B730 /* 360iDev.png in Resources */,
+				29536CCC141D7D610044B730 /* InfoPlist.strings in Resources */,
+				29536CCE141D7DE40044B730 /* Teapot.png in Resources */,
+				29028C7C141DA49C002053B3 /* Info.plist in Resources */,
+				29028C85141DB7E5002053B3 /* schedule.png in Resources */,
+				29028C87141DB979002053B3 /* 360iDevBanner.png in Resources */,
+				29028C89141DBA59002053B3 /* CrownePlaza.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29536CDC141D87840044B730 /* Install AppleTV Appliance */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Install AppleTV Appliance";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${CONFIGURATION_BUILD_DIR}\ntar -cvzf ${EXECUTABLE_FOLDER_PATH}.tar.gz ${EXECUTABLE_FOLDER_PATH}\n\nmv ${EXECUTABLE_FOLDER_PATH}.tar.gz ${PROJECT_DIR}/${EXECUTABLE_FOLDER_PATH}.tar.gz\n\ncd ${PROJECT_DIR}\n\nscp ${EXECUTABLE_FOLDER_PATH}.tar.gz \"${ATV_SSH_USER}@${ATV_ADDRESS}:${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"cd ${ATV_APPLIANCE_INSTALL_PATH}; tar -xvzf ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"rm -f  ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\n# Reboot to complete the installation\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} killall -9 AppleTV ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29536C9D141D79860044B730 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29536CB8141D7ADA0044B730 /* ATVAppliance.mm in Sources */,
+				29536CB9141D7ADA0044B730 /* BRTopShelfView-ProductImage.m in Sources */,
+				29536CBA141D7ADA0044B730 /* HelloWorldMainMenu.m in Sources */,
+				29536CBB141D7ADA0044B730 /* TopShelfController.m in Sources */,
+				29536CBE141D7B450044B730 /* GLGravityView.m in Sources */,
+				29536CD6141D82B60044B730 /* GLGravityViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29536CC9141D7D610044B730 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29536CCA141D7D610044B730 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29536CAB141D79860044B730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ATV_ADDRESS = atvjb.mgile.com;
+				ATV_APPLIANCE_INSTALL_PATH = /Applications/AppleTV.app/Appliances;
+				ATV_SSH_USER = root;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Gile (3F477J4659)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "helloWorld/helloWorld-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "include/**";
+				INFOPLIST_FILE = helloWorld/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C9712642-CB64-4CBE-9D06-D192D8074D9D";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				WRAPPER_EXTENSION = frappliance;
+			};
+			name = Debug;
+		};
+		29536CAC141D79860044B730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ATV_ADDRESS = atvjb.mgile.com;
+				ATV_APPLIANCE_INSTALL_PATH = /Applications/AppleTV.app/Appliances;
+				ATV_SSH_USER = root;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Gile (3F477J4659)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "helloWorld/helloWorld-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "include/**";
+				INFOPLIST_FILE = helloWorld/Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C9712642-CB64-4CBE-9D06-D192D8074D9D";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				WRAPPER_EXTENSION = frappliance;
+			};
+			name = Release;
+		};
+		29F21F85141D7185008E187C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Gile (3F477J4659)";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PROVISIONING_PROFILE = "C9712642-CB64-4CBE-9D06-D192D8074D9D";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+			};
+			name = Debug;
+		};
+		29F21F86141D7185008E187C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Gile (3F477J4659)";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				MACH_O_TYPE = mh_bundle;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PROVISIONING_PROFILE = "C9712642-CB64-4CBE-9D06-D192D8074D9D";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29536CAA141D79860044B730 /* Build configuration list for PBXNativeTarget "helloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29536CAB141D79860044B730 /* Debug */,
+				29536CAC141D79860044B730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29F21F83141D7185008E187C /* Build configuration list for PBXProject "atvHelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29F21F85141D7185008E187C /* Debug */,
+				29F21F86141D7185008E187C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29F21F80141D7185008E187C /* Project object */;
+}
