@@ -327,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ${CONFIGURATION_BUILD_DIR}\ntar -cvzf ${EXECUTABLE_FOLDER_PATH}.tar.gz ${EXECUTABLE_FOLDER_PATH}\n\nmv ${EXECUTABLE_FOLDER_PATH}.tar.gz ${PROJECT_DIR}/${EXECUTABLE_FOLDER_PATH}.tar.gz\n\ncd ${PROJECT_DIR}\n\nscp ${EXECUTABLE_FOLDER_PATH}.tar.gz \"${ATV_SSH_USER}@${ATV_ADDRESS}:${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"cd ${ATV_APPLIANCE_INSTALL_PATH}; tar -xvzf ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"rm -f  ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\n# Reboot to complete the installation\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} killall -9 AppleTV ";
+			shellScript = "cd ${CONFIGURATION_BUILD_DIR}\ntar -cvzf ${EXECUTABLE_FOLDER_PATH}.tar.gz ${EXECUTABLE_FOLDER_PATH}\n\nmv ${EXECUTABLE_FOLDER_PATH}.tar.gz ${PROJECT_DIR}/${EXECUTABLE_FOLDER_PATH}.tar.gz\n\ncd ${PROJECT_DIR}\n\nscp ${EXECUTABLE_FOLDER_PATH}.tar.gz \"${ATV_SSH_USER}@${ATV_ADDRESS}:${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"cd ${ATV_APPLIANCE_INSTALL_PATH}; tar -xvzf ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\n#ssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"rm -f  ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\n# Reboot to complete the installation\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} killall -9 AppleTV ";
 		};
 /* End PBXShellScriptBuildPhase section */
 
