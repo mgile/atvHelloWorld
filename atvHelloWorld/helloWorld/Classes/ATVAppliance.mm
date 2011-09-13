@@ -115,7 +115,7 @@
 
 		[inputController setPrimaryInfoText:@"Input Event Testing"];
 		[inputController setInitialTextEntryText:@""];
-		[inputController setShowUserEnteredText:YES];
+		[inputController setShowUserEnteredText:NO];
 		[inputController setFootnoteText:@"Push some buttons..." withAttributes:nil];
 		
 		controller = [inputController autorelease];
