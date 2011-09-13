@@ -53,7 +53,7 @@
 			previewImage = [BRImage imageWithPath:[[NSBundle bundleForClass:[HelloWorldMainMenu class]] pathForResource:@"360iDev" ofType:@"png"]];
 			break;
 		case 1:
-			previewImage = [[BRThemeInfo sharedTheme] largeGeniusIconWithReflection];;
+			previewImage = [[BRThemeInfo sharedTheme] largeGeniusIconWithReflection];
 			break;
 		case 2:
 			previewImage = [BRImage imageWithPath:[[NSBundle bundleForClass:[HelloWorldMainMenu class]] pathForResource:@"CrownePlaza" ofType:@"png"]];
