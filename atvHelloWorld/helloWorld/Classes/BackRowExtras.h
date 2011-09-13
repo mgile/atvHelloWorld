@@ -1,7 +1,4 @@
-
-
 #import <objc/runtime.h>
-
 
 template <typename Type_>
 static inline Type_ &MSHookIvar(id self, const char *name) {

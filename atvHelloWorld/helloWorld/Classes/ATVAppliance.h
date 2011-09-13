@@ -1,6 +1,6 @@
 //
 //  ATVAppliance.h
-//  atvHello World
+//  atvHelloWorld
 //
 //  Created by Michael Gile on 8/21/11.
 //  Copyright 2011 Michael Gile All rights reserved.

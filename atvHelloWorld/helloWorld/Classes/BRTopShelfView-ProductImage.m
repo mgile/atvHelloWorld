@@ -3,7 +3,7 @@
 //  atvWindowTest
 //
 //  Created by Michael Gile on 8/21/11.
-//  Copyright 2011 WayIn Inc. All rights reserved.
+//  Copyright 2011 Michael Gile. All rights reserved.
 //
 
 #import "BRTopShelfView-ProductImage.h"

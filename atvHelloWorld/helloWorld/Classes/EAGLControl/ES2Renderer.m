@@ -145,7 +145,7 @@ enum {
 	// Validate program before drawing. This is a good check, but only really necessary in a debug build.
 	// DEBUG macro must be defined in your debug configurations if that's not already the case.
 #if defined(DEBUG)
-	if (![self validateProgram:program])
+	if (!validateProgram(program))
 	{
 		NSLog(@"Failed to validate program: %d", program);
 		return;

@@ -29,6 +29,8 @@
 		29536CCC141D7D610044B730 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29536CC9141D7D610044B730 /* InfoPlist.strings */; };
 		29536CCE141D7DE40044B730 /* Teapot.png in Resources */ = {isa = PBXBuildFile; fileRef = 29536CCD141D7DE40044B730 /* Teapot.png */; };
 		29536CD6141D82B60044B730 /* GLGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CD5141D82B60044B730 /* GLGravityViewController.m */; };
+		29AFDC8A141FEFE400770D4B /* template.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 29AFDC86141FEE5600770D4B /* template.fsh */; };
+		29AFDC8B141FEFE400770D4B /* template.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 29AFDC87141FEE5600770D4B /* template.vsh */; };
 		29D95EF4141EA0A300876AFA /* EAGLControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EEA141EA0A300876AFA /* EAGLControl.m */; };
 		29D95EF5141EA0A300876AFA /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EEC141EA0A300876AFA /* ES1Renderer.m */; };
 		29D95EF6141EA0A300876AFA /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EEE141EA0A300876AFA /* ES2Renderer.m */; };
@@ -72,6 +74,8 @@
 		29536CD4141D82B60044B730 /* GLGravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGravityViewController.h; sourceTree = "<group>"; };
 		29536CD5141D82B60044B730 /* GLGravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGravityViewController.m; sourceTree = "<group>"; };
 		29536CD7141D85150044B730 /* teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
+		29AFDC86141FEE5600770D4B /* template.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = template.fsh; sourceTree = "<group>"; };
+		29AFDC87141FEE5600770D4B /* template.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = template.vsh; sourceTree = "<group>"; };
 		29D95EE9141EA0A300876AFA /* EAGLControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLControl.h; sourceTree = "<group>"; };
 		29D95EEA141EA0A300876AFA /* EAGLControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLControl.m; sourceTree = "<group>"; };
 		29D95EEB141EA0A300876AFA /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
@@ -126,7 +130,6 @@
 				29536CD3141D82950044B730 /* Video */,
 				29536CD1141D82860044B730 /* OpenGL Teapot */,
 				29536CD0141D827E0044B730 /* 360iDev */,
-				29536CCF141D82710044B730 /* Hello World */,
 				29536CAE141D7ADA0044B730 /* ApplianceConfig.h */,
 				29536CAF141D7ADA0044B730 /* ATVAppliance.h */,
 				29536CB0141D7ADA0044B730 /* ATVAppliance.mm */,
@@ -152,15 +155,10 @@
 				29028C86141DB979002053B3 /* 360iDevBanner.png */,
 				29028C84141DB7E5002053B3 /* schedule.png */,
 				29536CC9141D7D610044B730 /* InfoPlist.strings */,
+				29AFDC86141FEE5600770D4B /* template.fsh */,
+				29AFDC87141FEE5600770D4B /* template.vsh */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		29536CCF141D82710044B730 /* Hello World */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Hello World";
 			sourceTree = "<group>";
 		};
 		29536CD0141D827E0044B730 /* 360iDev */ = {
@@ -299,6 +297,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AFDC8A141FEFE400770D4B /* template.fsh in Resources */,
+				29AFDC8B141FEFE400770D4B /* template.vsh in Resources */,
 				29536CCB141D7D610044B730 /* 360iDev.png in Resources */,
 				29536CCC141D7D610044B730 /* InfoPlist.strings in Resources */,
 				29536CCE141D7DE40044B730 /* Teapot.png in Resources */,
@@ -317,7 +317,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		29536CDC141D87840044B730 /* Install AppleTV Appliance */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -325,7 +325,7 @@
 			name = "Install AppleTV Appliance";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "cd ${CONFIGURATION_BUILD_DIR}\ntar -cvzf ${EXECUTABLE_FOLDER_PATH}.tar.gz ${EXECUTABLE_FOLDER_PATH}\n\nmv ${EXECUTABLE_FOLDER_PATH}.tar.gz ${PROJECT_DIR}/${EXECUTABLE_FOLDER_PATH}.tar.gz\n\ncd ${PROJECT_DIR}\n\nscp ${EXECUTABLE_FOLDER_PATH}.tar.gz \"${ATV_SSH_USER}@${ATV_ADDRESS}:${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"cd ${ATV_APPLIANCE_INSTALL_PATH}; tar -xvzf ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} \"rm -f  ${ATV_APPLIANCE_INSTALL_PATH}/${EXECUTABLE_FOLDER_PATH}.tar.gz\"\n\n# Reboot to complete the installation\nssh ${ATV_SSH_USER}@${ATV_ADDRESS} killall -9 AppleTV ";
 		};

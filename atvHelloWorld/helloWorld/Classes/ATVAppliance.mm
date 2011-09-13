@@ -121,16 +121,7 @@
 		controller = [inputController autorelease];
 	}
 	else if ([identifier isEqualToString:VIDEO_ID]) {
-		
-		NSArray* movieArray		= [NSArray arrayWithObject:[[[SampleVideoAsset alloc] init] autorelease]];
-		NSError* playerErr		= nil;
-		BRMediaPlayer* player	= [[BRMediaPlayerManager singleton] playerForMediaAssetAtIndex:0 inTrackList:movieArray error:&playerErr];
-		
 		[[BRMediaPlayerManager singleton] presentMediaAsset:[[[SampleVideoAsset alloc] init] autorelease] options:nil];
-		
-		//[[BRMediaPlayerManager singleton] presentPlayer:player options:nil];
-		
-		//controller	= [[HelloWorldMainMenu alloc] init];
 	}
 	else if ([identifier isEqualToString:EAGLCONTROL_ID]) {
 		EAGLControl* eaglCtrl = [[EAGLControl alloc] init];
