@@ -12,6 +12,11 @@
 #import "GLGravityView.h"
 #import "GLGravityViewController.h"
 #import "HelloWorldMainMenu.h"
+#import "EAGLControl.h"
+#import "InputEventController.h"
+#import "SampleVideoAsset.h"
+#import "BRMediaPlayer.h"
+#import "BRMediaPlayerManager.h"
 
 @implementation ATVAppliance
 
@@ -29,18 +34,21 @@
 													   identifier:T60_ID 
 												   preferredOrder:T60_PREFERRED_ORDER]];
 	
+	[categoryList addObject:[BRApplianceCategory categoryWithName:INPUT_EVENTS_CATEGORY_NAME 
+													   identifier:INPUT_EVENTS_ID 
+												   preferredOrder:INPUT_EVENTS_PREFERRED_ORDER]];
+	
 	[categoryList addObject:[BRApplianceCategory categoryWithName:VIDEO_CATEGORY_NAME 
 													   identifier:VIDEO_ID 
 												   preferredOrder:VIDEO_PREFERRED_ORDER]];
 	
+	[categoryList addObject:[BRApplianceCategory categoryWithName:EAGLCONTROL_CATEGORY_NAME 
+													   identifier:EAGLCONTROL_ID 
+												   preferredOrder:EAGLCONTROL_PREFERRED_ORDER]];
+	
 	[categoryList addObject:[BRApplianceCategory categoryWithName:TEAPOT_CATEGORY_NAME 
 													   identifier:TEAPOT_ID 
 												   preferredOrder:TEAPOT_PREFERRED_ORDER]];
-	
-	[categoryList addObject:[BRApplianceCategory categoryWithName:MOLECULES_CATEGORY_NAME 
-													   identifier:MOLECULES_ID 
-												   preferredOrder:MOLECULES_PREFERRED_ORDER]];
-	
 	
 	return [NSArray arrayWithArray:[categoryList autorelease]];
 }
@@ -100,19 +108,37 @@
 									   secondaryText:@"Goodbye World"];
 	}
 	else if ([identifier isEqualToString:T60_ID]) {
-		controller	= [[HelloWorldMainMenu alloc] init];
+		controller	= [[[HelloWorldMainMenu alloc] init] autorelease];
+	}
+	else if ([identifier isEqualToString:INPUT_EVENTS_ID]) {
+		InputEventController* inputController = [[InputEventController alloc] init];
+
+		[inputController setPrimaryInfoText:@"Input Event Testing"];
+		[inputController setInitialTextEntryText:@""];
+		[inputController setShowUserEnteredText:YES];
+		[inputController setFootnoteText:@"Push some buttons..." withAttributes:nil];
+		
+		controller = [inputController autorelease];
 	}
 	else if ([identifier isEqualToString:VIDEO_ID]) {
-		controller	= [[HelloWorldMainMenu alloc] init];
+		
+		NSArray* movieArray		= [NSArray arrayWithObject:[[[SampleVideoAsset alloc] init] autorelease]];
+		NSError* playerErr		= nil;
+		BRMediaPlayer* player	= [[BRMediaPlayerManager singleton] playerForMediaAssetAtIndex:0 inTrackList:movieArray error:&playerErr];
+		
+		[[BRMediaPlayerManager singleton] presentMediaAsset:[[[SampleVideoAsset alloc] init] autorelease] options:nil];
+		
+		//[[BRMediaPlayerManager singleton] presentPlayer:player options:nil];
+		
+		//controller	= [[HelloWorldMainMenu alloc] init];
+	}
+	else if ([identifier isEqualToString:EAGLCONTROL_ID]) {
+		EAGLControl* eaglCtrl = [[EAGLControl alloc] init];
+		[eaglCtrl startAnimation];
+		controller	= [BRController controllerWithContentControl:eaglCtrl];
+		[eaglCtrl release];
 	}
 	else if ([identifier isEqualToString:TEAPOT_ID]) {
-		GLGravityView* gravityView = [[GLGravityView alloc] init];
-		[gravityView startAnimation];
-		
-		controller = [BRController controllerWithContentControl:gravityView];
-		[gravityView release];
-	}
-	else if ([identifier isEqualToString:MOLECULES_ID]) {
 		GLGravityView* gravityView = [[GLGravityView alloc] init];
 		[gravityView startAnimation];
 		

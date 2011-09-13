@@ -11,6 +11,11 @@
 		29028C85141DB7E5002053B3 /* schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 29028C84141DB7E5002053B3 /* schedule.png */; };
 		29028C87141DB979002053B3 /* 360iDevBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 29028C86141DB979002053B3 /* 360iDevBanner.png */; };
 		29028C89141DBA59002053B3 /* CrownePlaza.png in Resources */ = {isa = PBXBuildFile; fileRef = 29028C88141DBA59002053B3 /* CrownePlaza.png */; };
+		29270D96141EDF07008CAFD4 /* InputEventController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29270D95141EDF07008CAFD4 /* InputEventController.m */; };
+		29270D99141EE67F008CAFD4 /* SampleVideoAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 29270D98141EE67F008CAFD4 /* SampleVideoAsset.m */; };
+		29270D9B141EEA08008CAFD4 /* spiderman-small.mov in Resources */ = {isa = PBXBuildFile; fileRef = 29270D9A141EEA08008CAFD4 /* spiderman-small.mov */; };
+		29270D9D141EEA97008CAFD4 /* spiderman-poster.png in Resources */ = {isa = PBXBuildFile; fileRef = 29270D9C141EEA97008CAFD4 /* spiderman-poster.png */; };
+		29270D9F141EF32D008CAFD4 /* spiderman.mov in Resources */ = {isa = PBXBuildFile; fileRef = 29270D9E141EF32D008CAFD4 /* spiderman.mov */; };
 		29536CB8141D7ADA0044B730 /* ATVAppliance.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29536CB0141D7ADA0044B730 /* ATVAppliance.mm */; };
 		29536CB9141D7ADA0044B730 /* BRTopShelfView-ProductImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CB3141D7ADA0044B730 /* BRTopShelfView-ProductImage.m */; };
 		29536CBA141D7ADA0044B730 /* HelloWorldMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CB5141D7ADA0044B730 /* HelloWorldMainMenu.m */; };
@@ -24,6 +29,11 @@
 		29536CCC141D7D610044B730 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29536CC9141D7D610044B730 /* InfoPlist.strings */; };
 		29536CCE141D7DE40044B730 /* Teapot.png in Resources */ = {isa = PBXBuildFile; fileRef = 29536CCD141D7DE40044B730 /* Teapot.png */; };
 		29536CD6141D82B60044B730 /* GLGravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29536CD5141D82B60044B730 /* GLGravityViewController.m */; };
+		29D95EF4141EA0A300876AFA /* EAGLControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EEA141EA0A300876AFA /* EAGLControl.m */; };
+		29D95EF5141EA0A300876AFA /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EEC141EA0A300876AFA /* ES1Renderer.m */; };
+		29D95EF6141EA0A300876AFA /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EEE141EA0A300876AFA /* ES2Renderer.m */; };
+		29D95EF7141EA0A300876AFA /* matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EF0141EA0A300876AFA /* matrix.c */; };
+		29D95EF8141EA0A300876AFA /* Shaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D95EF3141EA0A300876AFA /* Shaders.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +41,13 @@
 		29028C84141DB7E5002053B3 /* schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schedule.png; sourceTree = "<group>"; };
 		29028C86141DB979002053B3 /* 360iDevBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 360iDevBanner.png; sourceTree = "<group>"; };
 		29028C88141DBA59002053B3 /* CrownePlaza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CrownePlaza.png; sourceTree = "<group>"; };
+		29270D94141EDF07008CAFD4 /* InputEventController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputEventController.h; sourceTree = "<group>"; };
+		29270D95141EDF07008CAFD4 /* InputEventController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputEventController.m; sourceTree = "<group>"; };
+		29270D97141EE67F008CAFD4 /* SampleVideoAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleVideoAsset.h; sourceTree = "<group>"; };
+		29270D98141EE67F008CAFD4 /* SampleVideoAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleVideoAsset.m; sourceTree = "<group>"; };
+		29270D9A141EEA08008CAFD4 /* spiderman-small.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "spiderman-small.mov"; sourceTree = "<group>"; };
+		29270D9C141EEA97008CAFD4 /* spiderman-poster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spiderman-poster.png"; sourceTree = "<group>"; };
+		29270D9E141EF32D008CAFD4 /* spiderman.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = spiderman.mov; sourceTree = "<group>"; };
 		29536CA1141D79860044B730 /* helloWorld.frappliance */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helloWorld.frappliance; sourceTree = BUILT_PRODUCTS_DIR; };
 		29536CA9141D79860044B730 /* helloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		29536CAE141D7ADA0044B730 /* ApplianceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplianceConfig.h; sourceTree = "<group>"; };
@@ -55,6 +72,17 @@
 		29536CD4141D82B60044B730 /* GLGravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGravityViewController.h; sourceTree = "<group>"; };
 		29536CD5141D82B60044B730 /* GLGravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLGravityViewController.m; sourceTree = "<group>"; };
 		29536CD7141D85150044B730 /* teapot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
+		29D95EE9141EA0A300876AFA /* EAGLControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLControl.h; sourceTree = "<group>"; };
+		29D95EEA141EA0A300876AFA /* EAGLControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLControl.m; sourceTree = "<group>"; };
+		29D95EEB141EA0A300876AFA /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
+		29D95EEC141EA0A300876AFA /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
+		29D95EED141EA0A300876AFA /* ES2Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES2Renderer.h; sourceTree = "<group>"; };
+		29D95EEE141EA0A300876AFA /* ES2Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES2Renderer.m; sourceTree = "<group>"; };
+		29D95EEF141EA0A300876AFA /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		29D95EF0141EA0A300876AFA /* matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrix.c; sourceTree = "<group>"; };
+		29D95EF1141EA0A300876AFA /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		29D95EF2141EA0A300876AFA /* Shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shaders.h; sourceTree = "<group>"; };
+		29D95EF3141EA0A300876AFA /* Shaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shaders.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +121,9 @@
 		29536CAD141D7ADA0044B730 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				29D95EE8141EA0A300876AFA /* EAGLControl */,
+				29D95EE5141EA04600876AFA /* Input Events */,
 				29536CD3141D82950044B730 /* Video */,
-				29536CD2141D828E0044B730 /* Molecules */,
 				29536CD1141D82860044B730 /* OpenGL Teapot */,
 				29536CD0141D827E0044B730 /* 360iDev */,
 				29536CCF141D82710044B730 /* Hello World */,
@@ -113,6 +142,9 @@
 		29536CC7141D7D610044B730 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29270D9C141EEA97008CAFD4 /* spiderman-poster.png */,
+				29270D9A141EEA08008CAFD4 /* spiderman-small.mov */,
+				29270D9E141EF32D008CAFD4 /* spiderman.mov */,
 				29028C7B141DA49C002053B3 /* Info.plist */,
 				29536CCD141D7DE40044B730 /* Teapot.png */,
 				29028C88141DBA59002053B3 /* CrownePlaza.png */,
@@ -152,18 +184,40 @@
 			name = "OpenGL Teapot";
 			sourceTree = "<group>";
 		};
-		29536CD2141D828E0044B730 /* Molecules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Molecules;
-			sourceTree = "<group>";
-		};
 		29536CD3141D82950044B730 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				29270D97141EE67F008CAFD4 /* SampleVideoAsset.h */,
+				29270D98141EE67F008CAFD4 /* SampleVideoAsset.m */,
 			);
 			name = Video;
+			sourceTree = "<group>";
+		};
+		29D95EE5141EA04600876AFA /* Input Events */ = {
+			isa = PBXGroup;
+			children = (
+				29270D94141EDF07008CAFD4 /* InputEventController.h */,
+				29270D95141EDF07008CAFD4 /* InputEventController.m */,
+			);
+			name = "Input Events";
+			sourceTree = "<group>";
+		};
+		29D95EE8141EA0A300876AFA /* EAGLControl */ = {
+			isa = PBXGroup;
+			children = (
+				29D95EE9141EA0A300876AFA /* EAGLControl.h */,
+				29D95EEA141EA0A300876AFA /* EAGLControl.m */,
+				29D95EEB141EA0A300876AFA /* ES1Renderer.h */,
+				29D95EEC141EA0A300876AFA /* ES1Renderer.m */,
+				29D95EED141EA0A300876AFA /* ES2Renderer.h */,
+				29D95EEE141EA0A300876AFA /* ES2Renderer.m */,
+				29D95EEF141EA0A300876AFA /* ESRenderer.h */,
+				29D95EF0141EA0A300876AFA /* matrix.c */,
+				29D95EF1141EA0A300876AFA /* matrix.h */,
+				29D95EF2141EA0A300876AFA /* Shaders.h */,
+				29D95EF3141EA0A300876AFA /* Shaders.m */,
+			);
+			path = EAGLControl;
 			sourceTree = "<group>";
 		};
 		29F21F7E141D7185008E187C = {
@@ -252,6 +306,9 @@
 				29028C85141DB7E5002053B3 /* schedule.png in Resources */,
 				29028C87141DB979002053B3 /* 360iDevBanner.png in Resources */,
 				29028C89141DBA59002053B3 /* CrownePlaza.png in Resources */,
+				29270D9B141EEA08008CAFD4 /* spiderman-small.mov in Resources */,
+				29270D9D141EEA97008CAFD4 /* spiderman-poster.png in Resources */,
+				29270D9F141EF32D008CAFD4 /* spiderman.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +342,13 @@
 				29536CBB141D7ADA0044B730 /* TopShelfController.m in Sources */,
 				29536CBE141D7B450044B730 /* GLGravityView.m in Sources */,
 				29536CD6141D82B60044B730 /* GLGravityViewController.m in Sources */,
+				29D95EF4141EA0A300876AFA /* EAGLControl.m in Sources */,
+				29D95EF5141EA0A300876AFA /* ES1Renderer.m in Sources */,
+				29D95EF6141EA0A300876AFA /* ES2Renderer.m in Sources */,
+				29D95EF7141EA0A300876AFA /* matrix.c in Sources */,
+				29D95EF8141EA0A300876AFA /* Shaders.m in Sources */,
+				29270D96141EDF07008CAFD4 /* InputEventController.m in Sources */,
+				29270D99141EE67F008CAFD4 /* SampleVideoAsset.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +430,7 @@
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloWorld/helloWorld-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -394,7 +459,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Gile (3F477J4659)";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				MACH_O_TYPE = mh_bundle;
 				OTHER_LDFLAGS = (
@@ -412,7 +478,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Gile (3F477J4659)";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = 4.2;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				MACH_O_TYPE = mh_bundle;
 				OTHER_LDFLAGS = (
